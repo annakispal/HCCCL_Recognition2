@@ -82,8 +82,8 @@ instruction3_trial.present();
 loop int i = 1 until i > 40
 begin
 isi_trial.present();
-buttons_p.set_filename( "buttons.png" );
-buttons_p.load();
+buttons_t.set_filename( "buttons.png" );
+buttons_t.load();
 word_recognition.set_caption (word_list[i][1]);
 word_recognition.redraw();
 string oldnew = word_list[i][2];

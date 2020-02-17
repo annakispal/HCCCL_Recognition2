@@ -121,6 +121,8 @@ trial{
     caption = "WORDS";
    } word_recognition;
     x = 0; y = 0;
+    bitmap { filename = ""; preload = false; } buttons_t;
+                        x = 0; y = -300;
   }word_recognition_pic;
   target_button = 1, 2;
  }word_recognition_event;

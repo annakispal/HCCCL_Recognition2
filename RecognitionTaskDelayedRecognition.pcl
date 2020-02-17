@@ -1,0 +1,97 @@
+#RECOGNITION TASK
+#DELAYED RECOGNITION PHASE
+
+begin;
+
+array <string> practice_list[5] [2]= {
+{"BETON", "1"},
+{"TOLMÁCS", "2"},
+{"SZILVA", "2"},
+{"KOKTÉL", "1"},
+{"SZÖCSKE", "2"}
+}; #PRACTICE
+
+array <string> word_list[40] [2] = {
+{"KOLERA", "1"},
+{"KOKTÉL", "1"},
+{"SIVATAG", "1"},
+{"BRAZÍLIA", "1"},
+{"MÁLNA", "1"},
+{"FEJSZE", "1"},
+{"BETON", "1"},
+{"HEGESZTŐ", "2"},
+{"MAJORÁNNA", "1"},
+{"REVOLVER", "2"},
+{"SZINTETIZÁTOR", "2"},
+{"SZIKLA", "2"},
+{"SZILVA", "2"},
+{"SZALMONELLA", "2"},
+{"TIGRIS", "2"},
+{"DOMINÓ", "1"},
+{"SIRÁLY", "2"},
+{"SZÖCSKE", "2"},
+{"KECSKE", "1"},
+{"TÖLCSÉR", "2"},
+{"MARTINI", "2"},
+{"KATONA", "1"},
+{"FÉNYMÁSOLÓ", "1"},
+{"VENEZUELA", "2"},
+{"HERING", "1"},
+{"KESELYŰ", "1"},
+{"HARMONIKA", "1"},
+{"MIKROHULLÁMÚ", "1"},
+{"TOLLTARTÓ", "2"},
+{"KOCKA", "2"},
+{"TENISZ", "1"},
+{"SAPKA", "2"},
+{"LÁNDZSA", "1"},
+{"MÁRVÁNY", "2"},
+{"PIZSAMA", "1"},
+{"VITORLÁZÁS", "2"},
+{"TOLMÁCS", "2"},
+{"PETREZSELYEM", "2"},
+{"LEPKE", "1"},
+{"PISZTRÁNG", "2"}
+};
+
+#INSTRUCTIONS
+
+instruction1_trial.present();
+instruction2_trial.present();
+
+#PRACTICE TRIALS
+
+loop int i = 1 until i > 5
+begin
+isi_trial.present();
+buttons_p.set_filename( "buttons.png" );
+buttons_p.load();
+practice_text.set_caption (practice_list[i][1]);
+practice_text.redraw();
+practice_trial.present ();
+i = i + 1;
+end;
+
+instruction3_trial.present();
+
+#RECOGNITION TRIALS
+
+loop int i = 1 until i > 40
+begin
+isi_trial.present();
+buttons_t.set_filename( "buttons.png" );
+buttons_t.load();
+word_recognition_text.set_caption (word_list[i][1]);
+word_recognition_text.redraw();
+string oldnew = word_list[i][2];
+word_recognition_event.set_event_code("type," + word_list[i][2]);
+word_recognition_trial.present();
+
+i = i + 1;
+end;
+
+#THANKS
+
+thanks_trial.present();
+
+end;

@@ -69,6 +69,30 @@ buttons_p.load();
 practice_text.set_caption (practice_list[i][1]);
 practice_text.redraw();
 practice_trial.present ();
+
+int last=response_manager.response_count();
+response_data lastd=response_manager.last_response_data();
+int resp_button=lastd.button();
+int correct;
+correct = int(practice_list[i][2]);
+if last == 0 then
+	feedback_text.set_caption("Sajnos lejárt az idő.");
+elseif resp_button == correct then
+	if practice_list[i][2] == "1" then
+		 feedback_text.set_caption("A helyes válasz: RÉGI\n\nAz ön válasza: RÉGI");
+	elseif practice_list[i][2] == "2" then
+		 feedback_text.set_caption("A helyes válasz: ÚJ\n\nAz ön válasza: ÚJ");
+   end;
+elseif resp_button != correct then
+	if practice_list[i][2] == "1" then
+		 feedback_text.set_caption("A helyes válasz: RÉGI\n\nAz ön válasza: ÚJ");
+	elseif practice_list[i][2] == "2" then
+	    feedback_text.set_caption("A helyes válasz: ÚJ\n\nAz ön válasza: RÉGI");
+	end;
+end;
+feedback_text.redraw();
+feedback_trial.present();
+
 i = i + 1;
 end;
 

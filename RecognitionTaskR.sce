@@ -86,6 +86,21 @@ trial{
  }practice_event;
 }practice_trial;
 
+#FEEDBACK TRIAL
+trial {
+	trial_duration = 4000;
+	trial_type = fixed;
+	
+	stimulus_event {
+		picture {
+			text practice; x = 0; y = 0;
+			bitmap buttons_p; x = 0; y = -300;
+			text {caption = "default";} feedback_text; x = 0; y = 300;
+		} feedback_pic;
+	}feedback_event;
+}feedback_trial;
+
+
 #INSTRUCTION
 
 trial {

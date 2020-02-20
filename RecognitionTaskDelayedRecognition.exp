@@ -1,5 +1,5 @@
 <ver>20.3</ver>
-<efn>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskDelayedRecognition\RecognitionTaskDelayedRecognition.exp</efn>
+<efn>C:\Users\Uer\Documents\mta\WP_tasks\HCCCL_Recognition\HCCCL_Recognition2-master\RecognitionTaskDelayedRecognition.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,12 +40,12 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskDelayedRecognition\stimuli</dsd>
+<dsd>C:\Users\Uer\Documents\mta\WP_tasks\HCCCL_Recognition\HCCCL_Recognition2-master\stimuli</dsd>
 <dwm>0</dwm>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskDelayedRecognition\RecognitionTaskDelayedRecognition.sce</filename>
-<filename>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskDelayedRecognition\RecognitionTaskDelayedRecognition.pcl</filename>
+<filename>C:\Users\Uer\Documents\mta\WP_tasks\HCCCL_Recognition\HCCCL_Recognition2-master\RecognitionTaskDelayedRecognition.sce</filename>
+<filename>C:\Users\Uer\Documents\mta\WP_tasks\HCCCL_Recognition\HCCCL_Recognition2-master\RecognitionTaskDelayedRecognition.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -120,7 +120,7 @@
 <idt>0</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskDelayedRecognition\logfiles</lfd>
+<lfd>C:\Users\Uer\Documents\mta\WP_tasks\HCCCL_Recognition\HCCCL_Recognition2-master\logfiles</lfd>
 <lnb>2</lnb>
 <lno>4</lno>
 <log>
@@ -204,56 +204,9 @@
 <name>Billentyűzet</name>
 </device>
 <device>
-<abs_axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<saturation>1</saturation>
-</abs_axis>
-<abs_axis>
-<dead_zone>0</dead_zone>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<saturation>1</saturation>
-</abs_axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>X-axis</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>Y-axis</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<axis>
-<max>1000</max>
-<min>-1000</min>
-<name>Wheel</name>
-<restricted>1</restricted>
-<scale>1</scale>
-</axis>
-<device_type>2</device_type>
-<dx_device_type>0</dx_device_type>
-<max_raw_pos>65535</max_raw_pos>
-<min_raw_pos>0</min_raw_pos>
-<name>HID-compliant mouse</name>
-</device>
-<device>
 <device_type>3</device_type>
 <dx_device_type>0</dx_device_type>
-<name>HID Keyboard Device</name>
-</device>
-<device>
-<device_type>3</device_type>
-<dx_device_type>0</dx_device_type>
-<name>PC/AT Enhanced PS/2 Keyboard (101/102-Key)</name>
+<name>Standard PS/2 Keyboard</name>
 </device>
 <device>
 <abs_axis>
@@ -295,22 +248,22 @@
 <dx_device_type>0</dx_device_type>
 <max_raw_pos>65535</max_raw_pos>
 <min_raw_pos>0</min_raw_pos>
-<name>Asus Support Device</name>
+<name>Synaptics SMBus TouchPad</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>Wireless Device</name>
+<name>dynabook Hotkey Driver</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>Wireless Device 1</name>
+<name>dynabook Hotkey Driver 1</name>
 </device>
 <device>
 <device_type>4</device_type>
 <dx_device_type>17</dx_device_type>
-<name>ASUS Wireless Radio Control</name>
+<name>dynabook Hotkey Driver 2</name>
 </device>
 <device>
 <axis>
@@ -646,8 +599,8 @@
 <idv>
 <device_type>3</device_type>
 <dx_device_type>19</dx_device_type>
-<ibn>Right</ibn>
 <ibn>Left</ibn>
+<ibn>Right</ibn>
 <ibn>Enter</ibn>
 <idn>Billentyűzet</idn>
 <index>0</index>
@@ -656,12 +609,12 @@
 <label></label>
 <label></label>
 <label></label>
-<offset>205</offset>
 <offset>203</offset>
+<offset>205</offset>
 <offset>28</offset>
 </idv>
 <overrides></overrides>
-<sfn>C:\Users\kispa\Documents\PROGRAMMING\RecognitionTaskDelayedRecognition\RecognitionTaskDelayedRecognition.sce</sfn>
+<sfn>C:\Users\Uer\Documents\mta\WP_tasks\HCCCL_Recognition\HCCCL_Recognition2-master\RecognitionTaskDelayedRecognition.sce</sfn>
 </sce>
 <sct>
 <capture_device>
